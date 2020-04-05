@@ -5,10 +5,11 @@ wordpress:
   ports:
     - 8080:80
   volumes:
-    - src:/var/www/html
+    - ./src:/var/www/html
+    - ./config/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 db:
   image: mariadb
   environment:
     MYSQL_ROOT_PASSWORD: swialyitt6
   volumes:
-    - db:/var/lib/mysql
+    - ./db:/var/lib/mysql
