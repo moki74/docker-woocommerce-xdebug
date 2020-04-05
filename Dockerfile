@@ -15,3 +15,5 @@ COPY wp-su.sh /bin/wp
 RUN chmod +x /bin/wp-cli.phar /bin/wp
 RUN pecl install xdebug-beta \
     && docker-php-ext-enable xdebug
+
+COPY ./config/xdebug.ini  /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
