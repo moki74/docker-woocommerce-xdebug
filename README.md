@@ -8,11 +8,9 @@ Quick Start
 
 `docker-compose up`
 
+Xdebug - set port 9001 on IDE or change xdebug.ini in config dir !
+
 Point your browser to `http://127.0.0.1:8080`
 
-License
----
 
-MIT
 
-**Free Software, Hell Yeah!**
