@@ -4,8 +4,11 @@ wordpress:
     - db:mysql
   ports:
     - 8080:80
-
+  volumes:
+    - src:/var/www/html
 db:
   image: mariadb
   environment:
     MYSQL_ROOT_PASSWORD: swialyitt6
+  volumes:
+    - db:/var/lib/mysql

@@ -1,0 +1,2 @@
+2020-04-05T09:21:49+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/wp-admin/includes/ajax-actions.php' (include_path='.:/usr/local/lib/php') in /var/www/html/wp-admin/admin-ajax.php on line 39
+
